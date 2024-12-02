@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-color: hsl(30, 38%, 92%);
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: hsl(0, 0%, 100%);
+      display: flex;
+      gap: 25px;
+      border-radius: 10px;
+      width: 600px;
+    }
+
+    img {
+      width: 300px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .perfume {
+      font-family: Montserrat;
+      color: gray;
+
+    }
+
+    .gabrielle {
+      font-family: Fraunces;
+      font-size: 35px;
+      font-weight: 700;
+      color: hsl(212, 21%, 14%);
+      margin: 0;
+    }
+
+    .floral {
+      font-family: Montserrat;
+      font-size: 14px;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .prices {
+      display: flex;
+      gap: 20px;
+    }
+
+    .price1 {
+      font-size: 40px;
+      color: hsl(158, 36%, 37%);
+      font-family: Fraunces;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .price2 {
+      font-family: Montserrat;
+      font-size: small;
+      color: gray;
+      margin-top: 25px;
+      text-decoration: line-through;
+    }
+
+    button {
+      display: flex;
+      gap: 8px;
+      border: none;
+      background-color: hsl(158, 36%, 37%);
+      padding: 15px 85px;
+      border-radius: 12px;
+      color: white;
+
+    }
+
+    .cart {
+      font-weight: 700;
+      margin: 0;
+
+    }
+
+    .icon-cart {
+      width: 15px;
+      
+    }
+   
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="container">
+      <img src="images/image-product-desktop.jpg" alt="">
+      <div>
+
+        <p class="perfume">P e r f u m e</p>
+
+        <p class="gabrielle">Gabrielle <br> Essence Eau <br> De Parfum</p>
+
+        <p class="floral">A floral, solar and voluptuous <br> interpretation composed by <br> Olivier Polge,
+          Perfumer-Creator <br> for the House of CHANEL.</p>
+        <div class="prices">
+          <p class="price1">$149.99</p>
+          <p class="price2">$169.99</p>
+        </div>
+        <div class="container2">
+          <button>
+            <img src="images/icon-cart.svg" class="icon-cart" alt="">
+            <p class="cart">Add to Cart</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Cadumallet</a>.
+    </div>
+  </div>
+</body>
+
+</html>
